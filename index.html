@@ -21,7 +21,7 @@
 
 body {
   display:none;
-          background-color: #23456f;
+      background: linear-gradient(to top right, #0099cc 0%, #ccffff 100%);
 }
 #banner {
 background-color: #1168d2;
@@ -33,31 +33,22 @@ background-color: #1168d2;
        left: 0;
     box-shadow: 1px 1px 2px #1f3a5a;}
 .cubes{
-filter: brightness(1.15);
-  opacity:0.8;
-width: 80px;
-margin-top:-30px;
- z-index:-1;
- /* Firefox */
--moz-transition: all .7s ease;
-/* WebKit */
--webkit-transition: all .7s ease;
-/* Opera */
--o-transition: all .7s ease;
-/* Standard */
-transition: all .7s ease;
--webkit-user-drag: none;
+  filter: brightness(1.15);
+  position: relative;
+  width: 32%;
+  max-width: 250px;
+  left: -75px;
+  margin-top: -70px;
+  margin-bottom: -76px;
+  /* left: 20%; */
+  z-index: 1;
+  -moz-transition: all .7s ease;
+  -webkit-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
+  -webkit-user-drag: none;
 }
-.cubes:hover{
-  -moz-transform: rotate(-90deg) scale(1.3) ;
 
-	/* WebKit */
-	-webkit-transform:  rotate(-90deg) scale(1.3);
-	/* Opera */
-	-o-transform: rotate(-90deg) scale(1.3);
-	/* Standard */
-	transform: rotate(-90deg) scale(1.3);
-    }
 
     .gameImg{
     filter: brightness(.95);
@@ -122,13 +113,13 @@ a:hover {
   /* Standard */
   transition: all 0.25s ease;
 
-    border: solid 3px #5380b5;
+    border: solid 3px #b98e20;
 width:90%;
 max-width:645px;
-        background-color: #e2efff;
-    border-radius:12px;
+        background-color: #fffefa;
+    border-radius:44px;
 
-box-shadow: 4px 5px 8px 4px #173150;
+box-shadow: 4px 5px 8px 4px #2299b7;
          padding: 18px;
     margin-bottom:40px;
 }
@@ -202,7 +193,8 @@ button:hover {
     .lowerTitle{
       margin: 12;
       text-align: center;
-      font: 12px/22px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      font: 12px/32px  Garamond, serif;
+
     }
     h1{
         font: 28px/28px "Trebuchet MS", Helvetica, sans-serif;
@@ -337,13 +329,14 @@ function classChange(id, class1){
         <button id="gamesBtn" onclick="location.href= '/games'" type="button" class="button">Games</button>
 
 		</center></td></tr></tbody></table></center></center>
+
 <div style="margin-top:5px;"></div>
   <table class='lowerTbl' id="lowerTbl" style="max-width:600px; display:inline-block;">
-
   <tr style="width:100%"><td>
+        <img class="cubes"  src="CSS/flowers.png" >
     <div id="about" class="fadingIn"><center><div style="margin-top:10px;"></div>
-    <p class="lowerTitle" style="font-size:30px">Benjamin Carter</p>  <div style="margin-top:20px;"></div>
-    <img src="CSS/profilePic.jpg" id="profilePic" style="border: 1.2px solid #c6dfff;top:10px; max-width:90%;max-height:240px;"><br></center>
+    <p class="lowerTitle" style="font-size:36px">Eindani & Benjamin</p>  <div style="margin-top:20px;"></div>
+    <img src="CSS/profilePic.jpg" id="profilePic" style="border: 1.2px solid #c6dfff;top:10px; max-width:90%;max-height:540px;"><br></center>
 
       <div style="margin-top:15px; margin-left:4%;margin-right:4%; text-align: justify;text-justify: inter-word;"><p3 id="content">
       Hello. I am a PhD candidate in the Department of Political Science at Stony Brook University.
@@ -399,7 +392,7 @@ function classChange(id, class1){
 </div>
 
 </table>
-        <br><img class="cubes"  src="CSS/cubes2.png" ><br><br><br>
+
 
 
 
