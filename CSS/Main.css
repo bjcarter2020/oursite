@@ -1,0 +1,820 @@
+
+body {
+        background-color:#609fce; 
+    -webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-khtml-user-select: none; /* Konqueror */
+	-moz-user-select: none;  /* Firefox */
+	-ms-user-select: none; * IE/Edge */
+	user-select: none; /* non-prefixed, not supported by any browser */
+}
+
+div.startPage {
+    position:relative;
+    margin: auto;
+    width: 1020px;
+  
+} 
+
+.start {
+      cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+    font-size:20px;
+    padding: 2px;
+}
+
+div.object {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 200px;
+    height: 300px;
+    border: 3px solid #73AD21;
+}
+
+
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+   
+   to {opacity:1;}
+}
+
+@keyframes fadeOut {
+    from {opacity: 1;}
+   
+   to {opacity:0;}
+}
+
+.fadingOut{
+      
+       animation-name: fadeOut;
+       animation-duration: 0.5s;
+    
+           }
+
+
+    .fadingIn{
+        
+        animation-name: fadeIn;
+       animation-duration: 0.5s;
+       
+            }
+
+.positive{
+   color:limegreen;
+    
+}
+.negative{
+    color:firebrick;
+}
+.neutral{
+    color:black;
+}
+
+
+
+
+.grow {
+
+    
+    -webkit-animation: cssGrow 0.5s ease-out, cssShrink 0.5s ease-out,  cssGrow 0.5s ease-out, cssShrink 0.5s ease-out;
+    
+}
+
+@-webkit-keyframes cssGrow {
+from {
+-webkit-transform: scale(1);
+}
+to {
+-webkit-transform: scale(1.5);
+    } }
+
+@-webkit-keyframes cssShrink {
+from {
+-webkit-transform: scale(1.5);
+}
+to {
+-webkit-transform: scale(1);
+    } }
+
+
+
+
+
+
+
+
+
+div.gameTbl{
+     
+     border-radius: 25px;
+   position: absolute;
+  
+     width: 760px;
+    height: 410px;
+    
+    left: 120px;
+    border-style:solid;
+    border-width: 3px; border-color:brown;
+    background-image: url(bgforest.jpg);
+    background-size: 100% 100%;
+    
+}
+
+.numbers{
+    font-size:22px;
+      
+}
+
+
+
+.lowerTitle{
+    font-size:26px;
+    margin:0;
+    text-align: center
+}
+
+.voteTbl{
+     
+     position: absolute;
+     border-radius: 25px;
+     width: 120px;
+     height: 255px;
+     top:40px;
+     right:0px;
+      border-style: solid; border-width: 2px; border-color:brown;
+        background-color:floralwhite;
+                    padding: 5px;
+    
+}
+
+
+.scoreboard td{
+    padding: 1px;
+    padding: 1px; 4px; 1px; 4px;
+
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.scoreboard {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+
+
+.top{
+    vertical-align:top;
+    font-family: comic sans ms;
+    font-size: 16px;
+    text-align: center;
+}
+.top1{
+    vertical-align:top;
+    font-family: comic sans ms;
+    font-size: 14px;
+}
+.top2{
+    vertical-align:top;
+    font-family: comic sans ms;
+    font-size: 16px;
+}
+
+.comic{
+    font-family: comic sans ms;
+}
+.pieTbl{
+ 
+    table-layout:fixed;
+     position: absolute;
+  
+     border-radius: 25px;
+     width: 200px;
+     height: 380px;
+     top: 397px;
+     left: 425px;
+      border-style: solid; border-width: 2px; border-color:brown;
+        background-color:floralwhite;
+    padding: 15px;
+     
+            
+}
+#parentBasket{
+    width: 200px;
+    height: 190px;
+    align-self: center;
+}
+#energyBar {
+	position: relative;
+	width: 480px;
+	height: 100px;					
+	border-radius:25px;
+	padding: 5px;
+	font-family: comic sans ms;
+	margin-left:auto;
+	margin-right:auto;		
+	color: #FFFFFF;
+	font-weight:bold;	
+}
+
+#pieDiv {
+    width: 200px;
+    height: 190px;
+    align-self: center;
+}
+
+#sliceDiv {
+      width: 200px;
+    height: 200px;
+    align-self: center;
+}
+#plate {
+    width: 250px;
+    height: 165px;
+    align-self: center;
+}
+
+#findBasket{
+   width:136px;
+    height: 120px;
+     position: absolute;
+            -moz-transform: scaleY(-1);
+            -o-transform: scaleY(-1);
+            -webkit-transform: scaleY(-1);
+            transform: scaleY(-1);
+            filter: FlipV;
+            -ms-filter: "FlipV";
+        
+  }
+#comBasket{
+   width:144px;
+   
+     position: absolute;
+            -moz-transform: scaleY(-1);
+            -o-transform: scaleY(-1);
+            -webkit-transform: scaleY(-1);
+            transform: scaleY(-1);
+            filter: FlipV;
+    -ms-filter: "FlipV";}
+        
+.berries{
+      
+    -moz-transform: scaleY(-1);
+            -o-transform: scaleY(-1);
+            -webkit-transform: scaleY(-1);
+            transform: scaleY(-1);
+            filter: FlipV;
+            -ms-filter: "FlipV";
+  position:relative;
+    z-index: inherit;}
+
+.comBerries{
+      height:20px;
+        width:20px;
+    -moz-transform: scaleY(-1);
+            -o-transform: scaleY(-1);
+            -webkit-transform: scaleY(-1);
+            transform: scaleY(-1);
+            filter: FlipV;
+            -ms-filter: "FlipV";
+  position:static;
+    z-index: inherit;}
+
+
+.rightAlign{
+   float:right;
+   
+}
+.leftAlign{
+    float:left;
+  
+}
+
+.popupTbl{
+    
+     position: absolute;
+     border-radius: 25px;
+     width: 390px;
+     height: 270px;
+     
+    top: 50px;
+     left: 315;
+      border-style: solid; border-width: 2px; border-color:brown;
+        background-color:floralwhite;
+                padding: 18px;
+   
+}
+.popupTbl1{
+    
+     position: absolute;
+     border-radius: 25px;
+     width: 425px;
+     height: 320px;
+     font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 16px;
+    top: 10px;
+     left: 285px;
+      border-style: solid; border-width: 2px; border-color:brown;
+        background-color:antiquewhite;
+                padding: 18px;
+}
+
+.startTbl{    
+     position: absolute;
+     border-radius: 25px;
+     width: 150px;
+     height: 115px;
+     font-family: "Comic Sans MS", cursive, sans-serif;
+     font-size:22px;
+    top: 150px;
+     left: 435;
+      border-style: solid; border-width: 2px; border-color:brown;
+        background-color:antiquewhite;
+                padding: 9px;
+      cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+.popupTbl3{
+    
+     position: absolute;
+     border-radius: 25px;
+     width: 650px;
+     height: 340px;
+     
+    top: 45px;
+     left: 170px;
+      border-style: solid; border-width: 3px; border-color:brown;
+        background-color:floralwhite;
+                padding: 10px;
+   
+}
+.devTbl{
+    
+     position: absolute;
+     border-radius: 25px;
+     width: 200px;
+     height: 500px;
+     
+    top: 0;
+     left: -100;
+      border-style: solid; border-width: 3px; border-color:brown;
+        background-color:antiquewhite;
+                padding: 1px;
+   
+}
+.devTbl1{
+    
+     position: absolute;
+     border-radius: 25px;
+     width: 200px;
+     height: 500px;
+     
+    top: 0;
+     right: -85;
+      border-style: solid; border-width: 3px; border-color:brown;
+        background-color:antiquewhite;
+                padding: 1px;
+   
+}
+
+.settingsBttn{
+    position: absolute;
+    top:430;
+    left: 200;
+}
+
+.border{
+    
+    padding:4px;
+}
+.bushTbl{
+    
+    table-layout:fixed;
+    
+     position: absolute;
+     border-radius: 25px;
+     width: 250px;
+     height: 160px;
+     
+    top: 150px;
+     left: 350px;
+      border-style: solid; border-width: 3px; border-color:darkgreen;
+        background-color:darkseagreen;
+                padding: 18px;
+     z-index: 1000;
+   
+}
+
+.sliceTbl{
+    
+    table-layout:fixed;
+    
+     position: absolute;
+     border-radius: 25px;
+     width: 250px;
+     height: 160px;
+     
+    top: 200px;
+     left: 370px;
+      border-style: solid; border-width: 3px; border-color:crimson;
+        background-color:floralwhite;
+                padding: 18px;
+     z-index: 1000;
+   
+}
+
+div.scoreTbl{
+   
+    table-layout:fixed;
+     position: absolute;
+  
+     border-radius: 25px;
+     width: 400px;
+     height: 200px;
+     top: 415px;
+     left: 300px;
+     
+      border-style: solid; border-width: 3px; border-color:brown;
+        background-color:floralwhite;
+    padding: 5px;
+     
+            
+}
+
+
+
+
+
+/* Bushes********************************************************** */
+
+.object1{
+   
+    display:inline-block;
+    background-image:url(bushes-hi.png);
+    background-size:100%;
+    position:absolute;
+    top: 310px;
+    left: 60;
+    width: 75px;
+    height: 30px;
+    opacity: 1;
+    cursor: zoom-in;
+     
+    }
+.object11{
+   
+    display:inline-block;
+    background-image:url(bushes-hi.png);
+    background-size:100%;
+    position:absolute;
+    top: 314px;
+    left: 42;
+    width: 65px;
+    height: 25px;
+    opacity: 1;
+    
+    cursor: zoom-in;
+     
+    }
+
+.object2{
+   
+    display:inline-block;
+    background-image:url(bushes-hi.png);
+    background-size:100%;
+    position:absolute;
+    top: 305px;
+    left: 258;
+    width: 45px;
+    height: 18px;
+    opacity: 1;
+    
+    cursor: zoom-in;
+     
+    }
+.object3{
+   
+    display:inline-block;
+    background-image:url(bushes-hi.png);
+    background-size:100%;
+    position:absolute;
+    top: 349px;
+    left: 89;
+    width: 150px;
+    height: 60px;
+    
+    cursor: zoom-in;
+    
+    }
+
+.object4{
+    
+    display:inline-block;
+    background-image:url(bushes-hi.png);
+    background-size:100%;
+    position:absolute;
+    top: 310px;
+    right: 150;
+    width: 64px;
+    height: 26px;
+    opacity: 1;
+    
+    cursor: zoom-in;
+    
+    }
+
+
+.object5{
+   
+    display:inline-block;
+    background-image:url(bushes-hi.png);
+    background-size:100%;
+    position:absolute;
+    top: 325px;
+    right: 2; 
+    width: 110px;
+    height: 43px;
+    opacity: 1;
+    
+    cursor: zoom-in;
+     
+    }
+
+
+.tblBush{
+   
+    display:inline-block;
+    background-image:url(bushes-hi.png);
+    background-size:100%;
+    position: absolute;
+    top: 130x;
+    left: 50;
+    width: 175px;
+    height: 70px;
+    
+}
+    
+
+
+/* Berries************************************************ */
+
+#circle {
+	width: 18px;
+	height: 18px;
+	background: url(berry.png);
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	border-radius: 9px;
+}
+
+
+
+
+.berry1{
+   
+    display:inline-block;
+    background-image:url(berry.png);
+    background-size:100%;
+    position: absolute;
+    top: 40px;
+    left: 15;
+    width: 18px;
+    height: 18px;
+    opacity: 1;
+    
+       cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+.berry1:active{
+ cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.berry2{
+   
+    display:inline-block;
+    background-image:url(berry.png);
+    background-size:100%;
+    position: absolute;
+    top: 25px;
+    left: 98px;
+    width: 18px;
+    height: 18px;
+    opacity: 1;
+    
+       cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+.berry2:active{
+  cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.berry3{
+   
+    display:inline-block;
+    background-image:url(berry.png);
+    background-size:100%;
+    position: absolute;
+    top: 48px;
+    left: 70px;
+    width: 18px;
+    height: 18px;
+    opacity: 1;
+    
+       cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+.berry3:active{
+  cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+.berry3.ondrag{
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.berry4{
+   
+    display:inline-block;
+    background-image:url(berry.png);
+    background-size:100%;
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    width: 18px;
+    height: 18px;
+    opacity: 1;
+    
+       cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+.berry4:active{
+  cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.berry5{
+   
+    display:inline-block;
+    background-image:url(berry.png);
+    background-size:100%;
+    position: absolute;
+    top: 47px;
+    left: 93px;
+    width: 18px;
+    height: 18px;
+    opacity: 1;
+    
+       cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+.berry5:active{
+  cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.berry6{
+   
+    display:inline-block;
+    background-image:url(berry.png);
+    background-size:100%;
+    position: absolute;
+    top: 40px;
+    left: 130px;
+    width: 18px;
+    height: 18px;
+    opacity: 1;
+    
+       cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+.berry6:active{
+  cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.berry7{
+   
+    display:inline-block;
+    background-image:url(berry.png);
+    background-size:100%;
+    position: absolute;
+    top: 10px;
+    left:50px;
+    width: 18px;
+    height: 18px;
+    opacity: 1;
+    
+       cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+.berry7:active{
+  cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.berry8{
+   
+    display:inline-block;
+    background-image:url(berry.png);
+    background-size:100%;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 18px;
+    height: 18px;
+    opacity: 1;
+    
+       cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+.berry8:active{
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.berry9{
+    
+   
+    display:inline-block;
+    background-image:url(berry.png);
+    background-size:100%;
+    position: absolute;
+    top: 10px;
+    left: 69;
+    width: 18px;
+    height: 18px;
+    opacity: 1;
+
+    
+       cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+.berry9:active{
+   cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+
+.berry10{
+   
+    display:inline-block;
+    background-image:url(berry.png);
+    background-size:100%;
+    position: absolute;
+    top: 20px;
+    left: 120;
+    width: 18px;
+    height: 18px;
+    opacity: 1;
+    
+       cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+.berry10:active{
+   cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+#villagerContribution{
+    color:crimson;
+	font-size: 14px;
+}

@@ -1,0 +1,380 @@
+<html>
+<head><title>Benjamin Carter</title> <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style type="text/css">
+    header {
+    background-image: url(amFlag.jpg);
+    padding: 15px;
+    color:floralwhite;
+
+
+    font:  24px bold "Lucida Console", Monaco, monospace;
+    text-shadow: 1px 1px firebrick;
+        line-height: 50%;
+}
+
+body {
+  display:none;
+          background-color: #23456f;
+
+                  }
+#banner {
+background-color: #1168d2;
+
+    width:100%;
+    position: absolute;
+
+    top: 0;
+       left: 0;
+    box-shadow: 1px 1px 2px #1f3a5a;}
+.cubes{
+filter: brightness(1.15);
+  opacity:0.8;
+width: 80px;
+margin-top:-30px;
+ z-index:-1;
+ /* Firefox */
+-moz-transition: all .7s ease;
+/* WebKit */
+-webkit-transition: all .7s ease;
+/* Opera */
+-o-transition: all .7s ease;
+/* Standard */
+transition: all .7s ease;
+-webkit-user-drag: none;
+}
+.cubes:hover{
+  -moz-transform: rotate(-90deg) scale(1.3) ;
+
+	/* WebKit */
+	-webkit-transform:  rotate(-90deg) scale(1.3);
+	/* Opera */
+	-o-transform: rotate(-90deg) scale(1.3);
+	/* Standard */
+	transform: rotate(-90deg) scale(1.3);
+    }
+
+    .gameImg{
+    filter: brightness(.95);
+     /* Firefox */
+    -moz-transition: all .1s ease;
+    /* WebKit */
+    -webkit-transition: all .1s ease;
+    /* Opera */
+    -o-transition: all .1s ease;
+    /* Standard */
+    transition: all .1s ease;
+    -webkit-user-drag: none;
+    }
+    .gameImg:hover{
+      cursor:pointer;
+      filter: brightness(1.03);
+      -moz-transform: scale(1.03) ;
+
+    	/* WebKit */
+    	-webkit-transform: scale(1.03);
+    	/* Opera */
+    	-o-transform: scale(1.03);
+    	/* Standard */
+    	transform: scale(1.03);
+        }
+    a{
+	  font-weight: bold;
+      /* Firefox */
+     -moz-transition: all 0.2s ease;
+     /* WebKit */
+     -webkit-transition: all 0.2s ease;
+     /* Opera */
+     -o-transition: all 0.2s ease;
+     /* Standard */
+     transition: all 0.2s ease;
+    }
+a:link {
+  color: #396eaf;
+  background-color: transparent;
+  text-decoration: none;
+
+}
+a:visited {
+  color: #396eaf;
+  background-color: transparent;
+  text-decoration: none;
+
+}
+
+a:hover {
+  color: #01ad55;
+  background-color: transparent;
+  text-decoration: none;
+
+}
+.lowerTbl{
+
+  -moz-transition: all 0.25s ease;
+  /* WebKit */
+  -webkit-transition: all 0.25s ease;
+  /* Opera */
+  -o-transition: all 0.25s ease;
+  /* Standard */
+  transition: all 0.25s ease;
+
+    border: solid 3px #5380b5;
+width:90%;
+max-width:645px;
+        background-color: #e2efff;
+    border-radius:12px;
+
+box-shadow: 4px 5px 8px 4px #173150;
+         padding: 18px;
+    margin-bottom:40px;
+
+
+}
+button:hover {
+  color:white;
+
+}
+
+
+
+.redlink{
+  font-color:firebrick;
+}
+.button{
+  /* Firefox */
+ -moz-transition: all 0.35s ease;
+ /* WebKit */
+ -webkit-transition: all 0.35s ease;
+ /* Opera */
+ -o-transition: all 0.35s ease;
+ /* Standard */
+ transition: all 0.35s ease;
+
+    padding: 0px;
+    padding-left: 9px;
+    padding-right: 9px;
+    background-color: transparent;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 0px;
+    font-color: antiquewhite;
+    cursor: pointer;
+    margin: 6px;
+    text-align: justify;
+    font: 18px/26px "Lucida Console", Monaco, monospace;
+    font-style:bold;
+    color: #6e93ad;
+     border-radius: 5px;
+
+}
+.buttonSelect{
+    padding:0px;
+    padding-left:9px;
+    padding-right:9px;
+    color:white;
+  background-color: transparent;
+  border-radius: 5px;
+  border-style:solid;
+  border-width:0px;
+  cursor: pointer;
+  margin: 6px;
+  text-align: justify;
+    font-style:bold;
+  font: 18px/26px "Lucida Console", Monaco, monospace;
+  }
+  button:focus {
+  outline: 0px solid #396eaf;
+  box-shadow: 0 0 0 1pt #396eaf;
+}
+
+    #profilePic{
+       margin-bottom:10px;
+    }
+    .upperTitle{
+        font-size:30px;
+        margin:3;
+        text-align: center;
+
+    }
+
+    .lowerTitle{
+      margin: 12;
+      text-align: center;
+      font: 12px/22px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    }
+    h1{
+        font: 28px/28px "Trebuchet MS", Helvetica, sans-serif;
+        color: floralwhite;
+    text-shadow: 0px 2px 0px #092950;
+    margin: 0px;
+    }
+
+    p1{
+            font: 12px/22px "Trebuchet MS", Helvetica, sans-serif;
+    color:gainsboro;
+    text-shadow: 0px 1px 0px #092950;
+    font-size: 15px;
+    margin: 0px;
+    text-align: justify;
+    }
+    p2{
+            font: 10px/16px "Lucida Console", Monaco, monospace;
+    color:floralwhite;
+    text-shadow: 0px 1px 0px #092950;
+    font-size: 15px;
+    margin:4px;
+    margin-top:5px;
+    text-align: justify;
+    }
+    p3{
+      text-align: justify;
+      font: 15px/24px "Trebuchet MS", Helvetica, sans-serif;
+    }
+    p4{
+      font: 15px/16px "Trebuchet MS", Helvetica, sans-serif;
+    }
+
+.notSelected{
+  color:#7b7b7b;
+}
+p3: hover{
+  color:black;
+}
+  #content{
+    text-align: justify;
+  }
+.paddingCl{
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.objects{
+    display:inline-block;
+    background-image:url(block.png);
+    background-size:100%;
+    border: 2px solid antiquewhite;
+    width: 150px;
+    height: 75px;
+    box-shadow: 2px 2px 2px #999;
+    cursor: move;
+    }
+#Construction_Zone{
+    background-color:floralwhite;
+    border: darkslateblue 2px dashed;
+    width: 500px;
+    height: 155px;
+    align-self: center;
+
+}
+@keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity:1;}
+}
+@keyframes fadeOut {
+	from {opacity: 1;}
+	to {opacity:0;}
+}
+
+.fadingIn{
+	display:inline-block !important;
+	-webkit-animation: fadeIn 0.5s linear !important;
+	animation-name: fadeIn ;!important;
+	animation-duration: 0.5s ;!important;
+}
+.hide{
+    display: none
+}
+
+    </style>
+
+
+
+    <script>
+function hide(id)  {
+    var divelement = document.getElementById(id);
+     divelement.style.display = 'none';
+ }
+
+function show(id)  {
+    var divelement = document.getElementById(id);
+        divelement.style.display = 'block';
+ }
+
+function selected(id, frameId){
+
+
+  document.getElementById('aboutBtn').classList.remove("buttonSelect");
+  document.getElementById('researchBtn').classList.remove("buttonSelect");
+  document.getElementById('gamesBtn').classList.remove("buttonSelect");
+
+  var divelement = document.getElementById(id);
+  divelement.classList.add("buttonSelect");
+    $(frameId).fadeIn("slow");
+}
+function classChange(id, class1){
+	var divelement =  document.getElementById(id);
+	divelement.classList.remove('hide', 'fadingIn');
+	divelement.classList.add(class1);
+
+}
+
+
+
+
+
+    </script>
+
+
+
+
+<body style="display:block">
+
+
+<div id="startpage" style="text-align:center; width:100%">
+<center>
+<table style="display:inline-block;">
+<center>
+
+  <tbody><div style="margin-top:20px;" ></div>
+  <tr>
+    <td class="paddingCl" ><button id="aboutBtn" onclick="location.href= '/'" type="button" class="button">About</button> </td><td class="paddingCl"><button id="researchBtn" onclick="location.href= '/research'" type="button" class="button">Research
+      </button></td><td class="paddingCl">
+      <button id="gamesBtn"  type="button" class="buttonSelect button">Games</button>
+
+		</center></td></tr></tbody></table></center></center>
+<div style="margin-top:5px;"></div>
+  <table class='lowerTbl' id="lowerTbl" style="max-width:600px; display:inline-block;">
+
+  <tr style="width:100%"><td>
+
+<div id="games" style=" color: #585c60; width: 100%; height:100%;     font: 15px/16px 'Trebuchet MS', Helvetica, sans-serif;" class="fadingIn">
+	 <div style="margin-top:15px; width:96%; column-span: all;margin-left:4%;margin-right:4%;">
+	    <p3 id="content" style="color:black">
+      <b><big>Play games!</big></b></p3><br><br>
+  I design games in JavaScript and HTML for experiments about politics. The games run on all popular web browsers and can be embedded in survey software, such as Qualtrics. <br>
+	<br> Click below to play demos of a Taxes and Voting Game I programmed for my research with <a style="font-weight:normal" target="_blank" rel="noopener noreferrer" href="http://pdescioli.com/home.html">Peter DeScioli</a> and <a style="font-weight:normal" target="_blank" rel="noopener noreferrer" href="https://sites.google.com/view/alessandrodelponte">Alessandro Del Ponte</a>. In the game, players earn high or low income and then vote about the tax rate.
+	</div> <br><br><center>
+      <div style="margin-bottom:8px;"><i><b>Voting about sharing in a remote village:</b></i></div>
+      <a href ="vgVilDEMO.html" target="_blank" rel="noopener noreferrer">
+  <img class="gameImg" src="CSS/vgVilSS.jpg"  style="border:solid #092950 1px; border-radius:12px; max-width:90%;max-height:190px;"></a><br>
+<br><br>
+  <div style="margin-bottom:8px;"><i><b>Voting about taxes in a U.S. election:</b></i></div>
+  <a href="vgPolDEMO.html" target="_blank" rel="noopener noreferrer">
+<img class="gameImg" src="CSS/vgPolSS.jpg"  style="border:solid #092950 1px; border-radius:12px; max-width:90%;max-height:190px;"></a><br>
+</center><br><br>
+</div>
+
+</table>
+        <br><img class="cubes"  src="CSS/cubes2.png" ><br><br><br>
+
+
+
+
+</body>
+</html>

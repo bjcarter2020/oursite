@@ -1,0 +1,98 @@
+header {
+    background-image: url(amFlag.jpg);
+    padding: 15px;
+    color:floralwhite; 
+    
+
+    font:  24px bold perpetua, serif;
+    text-shadow: 1px 1px firebrick;
+        line-height: 50%;
+}
+
+body {
+        background-color:lightsteelblue; 
+}
+
+.upperTbl{
+   border-style:ridge; border-width: 6px; border-color:firebrick;
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:floralwhite;
+    padding: 10px;
+    padding-top:7px;
+}
+.upperTitle{
+    font-size:32px;
+    margin:3;
+    text-align: center
+}
+
+.lowerTitle{
+    font-size:32px;
+    margin:0;
+    text-align: center
+}
+
+.lowerTbl{
+   border-style: solid; border-width: 2px; border-color:darkslateblue;
+    width:55%;
+    margin-left:auto;
+    margin-right:auto;
+        background-color:floralwhite;
+        
+        
+         padding: 18px;
+
+}
+
+
+.gameTbl{
+   border-style:ridge; border-width: 5px; border-color:firebrick;
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+        background-color:floralwhite;
+        
+        
+    padding: 20px;}
+
+table#t031{
+   border-style:ridge; border-width: 5px; border-color:firebrick;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+        background-color:floralwhite;
+        
+        
+    padding: 20px;}
+table#t04{
+   border-style: solid; border-width: 2px; border-color:darkslateblue;
+    width:85%;
+    margin-left:auto;
+    margin-right:auto;
+        background-color:floralwhite;
+        
+        
+         padding: 28px;
+}
+
+.objects{
+    display:inline-block;
+    background-image:url(block.png);
+    background-size:100%;
+    border: 2px solid antiquewhite;
+    width: 150px;
+    height: 75px;
+    box-shadow: 2px 2px 2px #999;
+    cursor: move;
+    }
+#drop_zone {
+    background-color:floralwhite;
+    border: darkslateblue 2px dashed;
+    width: 500px;
+    height: 155px;
+    align-self: center;
+    
+}
+
