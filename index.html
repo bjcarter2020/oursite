@@ -18,15 +18,13 @@
     text-shadow: 1px 1px firebrick;
         line-height: 50%;
 }
-html {
-    min-height:100%;
-}
+
 
 
 body {
-  display:none;
+
       background: linear-gradient(to top right, #0099cc 0%, #ccffff 100%);
-          height:100%;
+
 }
 #banner {
 background-color: #1168d2;
@@ -44,6 +42,7 @@ background-color: #1168d2;
   max-width: 250px;
   left: -14%;
   margin-top: -70px;
+  top: 100px;
   margin-bottom: -86px;
   /* left: 20%; */
   z-index: 1;
@@ -334,14 +333,20 @@ function classChange(id, class1){
         </button></td><td >
         <button id="gamesBtn" onclick="location.href= '/games'" type="button" class="button">Baby</button>
 
-		</center></td></tr></tbody></table></center></center>
+		</center></td>
+    <td >
+    <button id="gamesBtn" onclick="location.href= '/games'" type="button" class="button">Registry</button>
+
+</center></td>
+
+  </tr></tbody></table></center></center>
 
 <div style="margin-top:5px;"></div>
   <table class='lowerTbl' id="lowerTbl" style="max-width:700px; display:inline-block;">
   <tr style="width:100%"><td>
         <img class="cubes"  src="CSS/flowers.png" >
     <div id="about" class="fadingIn"><center><div style="margin-top:10px;"></div>
-    <p class="lowerTitle" style="font-size:xx-large">Eindani & Benjamin</p>  <div style="margin-top:20px;"></div>
+    <p class="lowerTitle" ><div style="font-size: clamp(24px, 4vw, 42px);">Eindani & Benjamin</div></p> <div style="margin-top:20px;"></div>
     <img src="CSS/us.jpg" id="profilePic" style="top:10px; max-width:90%;max-height:640px;"><br></center>
 
       <div style="margin-top:15px; margin-left:4%;margin-right:4%; text-align: justify;text-justify: inter-word;"><p3 id="content">
