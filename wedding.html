@@ -295,7 +295,7 @@ function selected(id, frameId){
   divelement.classList.add("buttonSelect");
     $(frameId).fadeIn("slow");
 }
-function classChange(id, class1){ 
+function classChange(id, class1){
 	var divelement =  document.getElementById(id);
 	divelement.classList.remove('hide', 'fadingIn');
 	divelement.classList.add(class1);
@@ -319,7 +319,7 @@ function classChange(id, class1){
 <a name="top"></a>
     <tbody><div style="margin-top:20px;"></div>
     <tr>
-      <td  ><button id="aboutBtn"  class=" button">About</button> </td><td ><button id="researchBtn" onclick="location.href= '/wedding'" type="button" class="buttonSelect button">Wedding
+      <td  ><button id="aboutBtn" onclick="location.href= '/index'"  class=" button">About</button> </td><td ><button id="researchBtn" type="button" class="buttonSelect button">Wedding
         </button></td><td >
         <button id="gamesBtn" onclick="location.href= '/baby'" type="button" class="button">Baby</button>
 
